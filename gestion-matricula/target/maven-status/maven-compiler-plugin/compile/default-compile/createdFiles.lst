@@ -1,0 +1,6 @@
+gestionmatricula\com\gestion_matricula\dto\CrearMatriculaRequest.class
+gestionmatricula\com\gestion_matricula\models\Matricula.class
+gestionmatricula\com\gestion_matricula\controller\MatriculaController.class
+gestionmatricula\com\gestion_matricula\repository\MatriculaRepository.class
+gestionmatricula\com\gestion_matricula\GestionMatriculaApplication.class
+gestionmatricula\com\gestion_matricula\service\MatriculaService.class
