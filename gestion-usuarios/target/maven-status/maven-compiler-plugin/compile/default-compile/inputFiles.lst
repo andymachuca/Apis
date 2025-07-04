@@ -1,0 +1,14 @@
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\config\UsuarioMapper.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\controllers\UsuarioController.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\dto\ClienteDTO.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\dto\CrearUsuarioRequest.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\dto\UsuarioDTO.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\dto\VendedorDTO.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\GestionUsuariosApplication.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\models\Cliente.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\models\Usuario.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\models\Vendedor.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\repository\ClienteRepository.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\repository\UsuarioRepository.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\repository\VendedorRepository.java
+C:\Users\andym\OneDrive\Desktop\Apis\gestion-usuarios\src\main\java\gestion\com\gestion_usuarios\services\UsuarioService.java
