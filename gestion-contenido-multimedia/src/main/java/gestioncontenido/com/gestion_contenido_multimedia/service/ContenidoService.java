@@ -1,4 +1,3 @@
-
 package gestioncontenido.com.gestion_contenido_multimedia.service;
 
 import gestioncontenido.com.gestion_contenido_multimedia.dto.CrearContenidoRequest;
@@ -30,5 +29,10 @@ public class ContenidoService {
 
     public List<Contenido> findAll() {
         return contenidoRepository.findAll();
+    }
+
+    public Contenido obtenerPorId(Long id) {
+        return contenidoRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Contenido no encontrado con ID: " + id));
     }
 }

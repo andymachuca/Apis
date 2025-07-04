@@ -1,4 +1,3 @@
-
 package gestionevaluaciones.com.gestion_evaluaciones.service;
 
 import gestionevaluaciones.com.gestion_evaluaciones.dto.CrearEvaluacionRequest;
@@ -29,7 +28,14 @@ public class EvaluacionService {
         return evaluacionRepository.save(evaluacion);
     }
 
-    public List<Evaluacion> findAll() {
+    
+    public List<Evaluacion> obtenerTodos() {
         return evaluacionRepository.findAll();
+    }
+
+    //
+    public Evaluacion obtenerPorId(Long id) {
+        return evaluacionRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Evaluación no encontrada con ID: " + id));
     }
 }

@@ -1,14 +1,14 @@
-
 package gestionanaliticas.com.gestion_analiticas.controller;
 
 import gestionanaliticas.com.gestion_analiticas.dto.CrearAnaliticaRequest;
 import gestionanaliticas.com.gestion_analiticas.models.Analitica;
 import gestionanaliticas.com.gestion_analiticas.service.AnaliticaService;
 import jakarta.validation.Valid;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -22,14 +22,21 @@ public class AnaliticaController {
     }
 
     @PostMapping
-    public ResponseEntity<?> crear(@Valid @RequestBody CrearAnaliticaRequest request) {
-        Analitica nueva = analiticaService.crear(request);
-        URI location = URI.create("/api/analiticas/" + nueva.getId());
-        return ResponseEntity.created(location).body(nueva);
+    public ResponseEntity<Analitica> crear(@Valid @RequestBody CrearAnaliticaRequest request) {
+        return ResponseEntity.ok(analiticaService.crear(request));
     }
 
     @GetMapping
-    public ResponseEntity<List<Analitica>> obtener() {
+    public ResponseEntity<List<Analitica>> obtenerTodos() {
         return ResponseEntity.ok(analiticaService.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<EntityModel<Analitica>> obtenerPorId(@PathVariable Long id) {
+        Analitica analitica = analiticaService.obtenerPorId(id);
+        EntityModel<Analitica> resource = EntityModel.of(analitica);
+        resource.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(AnaliticaController.class).obtenerPorId(id)).withSelfRel());
+        resource.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(AnaliticaController.class).obtenerTodos()).withRel("todos"));
+        return ResponseEntity.ok(resource);
     }
 }

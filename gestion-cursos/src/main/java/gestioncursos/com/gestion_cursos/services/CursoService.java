@@ -34,4 +34,8 @@ public class CursoService {
     public List<Curso> findAll() {
         return cursoRepository.findAll();
     }
+    public Curso obtenerPorId(Long id) {
+        return cursoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Curso no encontrado con ID: " + id));
+    }
 }

@@ -1,0 +1,94 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionUsuariosApplication<gestion-usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestion.com.gestion_usuarios.GestionUsuariosApplication",
+            "projectName": "gestion-usuarios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionPagoApplication<gestion-pago>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestionpago.com.gestion_pago.GestionPagoApplication",
+            "projectName": "gestion-pago",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionNotificacionesApplication<gestion-notificaciones>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestionnotificaciones.com.gestion_notificaciones.GestionNotificacionesApplication",
+            "projectName": "gestion-notificaciones",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionMatriculaApplication<gestion-matricula>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestionmatricula.com.gestion_matricula.GestionMatriculaApplication",
+            "projectName": "gestion-matricula",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionEvaluacionesApplication<gestion-evaluaciones>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestionevaluaciones.com.gestion_evaluaciones.GestionEvaluacionesApplication",
+            "projectName": "gestion-evaluaciones",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionCursosApplication<gestion-cursos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestioncursos.com.gestion_cursos.GestionCursosApplication",
+            "projectName": "gestion-cursos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionContenidoMultimediaApplication<gestion-contenido-multimedia>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestioncontenido.com.gestion_contenido_multimedia.GestionContenidoMultimediaApplication",
+            "projectName": "gestion-contenido-multimedia",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GestionAnaliticasApplication<gestion-analiticas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gestionanaliticas.com.gestion_analiticas.GestionAnaliticasApplication",
+            "projectName": "gestion-analiticas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "apigateway.com.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

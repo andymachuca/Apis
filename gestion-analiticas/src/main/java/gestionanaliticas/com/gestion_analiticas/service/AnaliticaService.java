@@ -31,4 +31,9 @@ public class AnaliticaService {
     public List<Analitica> findAll() {
         return analiticaRepository.findAll();
     }
+    public Analitica obtenerPorId(Long id) {
+    return analiticaRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Analítica no encontrada con ID: " + id));
+}
+
 }
